@@ -1,0 +1,17 @@
+body {
+  background-color: $white-color;
+  color: $primary-text-color;
+  font-family: Duru, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+
+  overflow-x: hidden;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+}
