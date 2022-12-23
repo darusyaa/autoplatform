@@ -1,49 +1,1050 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autoplatform</title>
+    <!-- Fonts -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Autoplatform</title>
-  <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Roboto:wght@300;400;500;700;900&display=swap"
-    rel="stylesheet" />
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
 
-  <!-- Normalize -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="./css/main.min.css" />
-</head>
+  <body>
+    <!-- Header (Хедер)-->
+    <header class="header" id="header">
+      <div class="header__container">
+        <!-- Site-nav (Навігація)-->
+        <nav class="site-nav">
+          <!-- Logo (Лого)-->
+          <a href="./index.html">
+            <img src="" alt="Logo" />
+          </a>
 
-<body>
+          <ul class="site-nav__list">
+            <li class="site-nav__item site-nav__item-active">
+              <a href="./index.html" class="site-nav__link">Головна</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Товари</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Послуги</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Регламент</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Контакти</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Блог</a>
+            </li>
+          </ul>
+        </nav>
 
-  <!-- Header -->
-  <header class="header" id="header">
-    <div class="header__container">
-      <!-- Site-nav -->
-      <nav class="site-nav">
-        <a href="./index.html"> </a>
-        <ul class="site-nav__list">
-          <li class="site-nav__item">
-            <a href="./index.html" class="site-nav__link site-nav__link--current">Головна</a>
+        <!-- Search (Пошук) -->
+        <div class="header-search">
+          <svg class="header-search__icon">
+            <use href=""></use>
+          </svg>
+        </div>
+
+        <!-- Consultation (Консультація) -->
+        <div class="header-consultation">
+          <button class="header-consultation__button">
+            безкоштовна консультація
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main (Головна)-->
+    <main>
+      <!-- Section Hero (Герой)-->
+      <section class="hero">
+        <hero class="hero__container">
+          <!-- Slider (Слайдер)-->
+          <div class="hero__slider">
+            <!-- Arrows (стрілочки назад/вперед) -->
+            <div class="hero__slider-prev">
+              <svg class="hero__slider__icon">
+                <use href=""></use>
+              </svg>
+            </div>
+            <div class="hero__slider-next">
+              <svg class="hero__slider__icon">
+                <use href=""></use>
+              </svg>
+            </div>
+
+            <!-- Slider-content (Контент слайдеру)-->
+            <div class="hero__slider__content">
+              <h1 class="hero__title">повноцінне відновлення авто з сша</h1>
+            </div>
+
+            <!-- Slider-wrapper (Обертка слайдеру)-->
+            <div class="hero__slider-wrapper">
+              <!-- First slide (Перший слайд (фото)) -->
+              <div class="hero__slider-slide">
+                <picture>
+                  <source srcset="" />
+                  <img class="hero__slider-img" src="" alt="" />
+                </picture>
+              </div>
+
+              <!-- Second slide (Другий слайд (фото)) і тд
+              ........-->
+            </div>
+          </div>
+        </hero>
+      </section>
+
+      <!-- Section Main-boxes (Головні картки(бокси))-->
+      <section class="main-boxes">
+        <div class="main-boxes__container">
+          <h2 class="main-boxes__title">Hidden</h2>
+          <ul class="main-boxes__list">
+            <!-- First box (Перший бокс) -->
+            <li class="main-boxes__item">
+              <div class="main-boxes__box">
+                <div class="main-boxes__square">
+                  <svg class="main-boxes__icon">
+                    <use href=""></use>
+                  </svg>
+                </div>
+
+                <h3 class="main-boxes__title">шиномонтаж</h3>
+                <p class="main-boxes__text">сезонне зберігання коліс</p>
+              </div>
+            </li>
+
+            <!-- Second box (Другий бокс) -->
+            <li class="main-boxes__item">
+              <div class="main-boxes__box">
+                <div class="main-boxes__square">
+                  <svg class="main-boxes__icon">
+                    <use href=""></use>
+                  </svg>
+                </div>
+
+                <h3 class="main-boxes__title">ремонт двигунів</h3>
+                <p class="main-boxes__text">обслуговування</p>
+              </div>
+            </li>
+
+            <!-- Third box (Третій бокс) -->
+            <li class="main-boxes__item">
+              <div class="main-boxes__box">
+                <div class="main-boxes__square">
+                  <svg class="main-boxes__icon">
+                    <use href=""></use>
+                  </svg>
+                </div>
+
+                <h3 class="main-boxes__title">ходова</h3>
+                <p class="main-boxes__text">ремонт ходової частини</p>
+              </div>
+            </li>
+
+            <!-- Fourth box (Четвертий бокс) -->
+            <li class="main-boxes__item">
+              <div class="main-boxes__box">
+                <div class="main-boxes__square">
+                  <svg class="main-boxes__icon">
+                    <use href=""></use>
+                  </svg>
+                </div>
+
+                <h3 class="main-boxes__title">автоелектрика</h3>
+                <p class="main-boxes__text">комп’ютерна діагностика</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section Services (Послуги)-->
+      <section class="services">
+        <div class="services__container">
+          <!-- Left part (ліва частина) -->
+          <div class="services__left">
+            <p class="services__text-main">наші послуги</p>
+            <h2 class="services__title-main">
+              auto <span class="services__title-main-span">platform</span>
+            </h2>
+            <h3 class="services__title-second">
+              потужна команда фахівців з багаторічним досвідом
+            </h3>
+            <p class="services__text-second">
+              Наш основний пріорітет - ЯКІСТЬ ОБСЛУГОВУВАННЯ! Наша ціль - стати
+              лідером ринку сервісного обслуговування легкових автомобілів. У
+              нас ВИ отримаєте повний спектр послуг - від видалення подряпини та
+              заміни шин, до капітального ремонту двигуна, або відновлення
+              геометрії кузова після ДТП. ​ Ми з досвіду знаємо, що неякісне,
+              дешеве устаткування призводить до невірних рішень та несе за собою
+              втрату часу, грошей та довіри, тому наш сервіс оснащений новітнім
+              обладнанням, придбаним у одного з ведучих постачальників України.
+            </p>
+          </div>
+
+          <!-- Right part (Права частина) -->
+          <div class="services__right">
+            <ul class="services__list">
+              <li class="services__item">
+                <a href="" class="services__link"
+                  >Обслуговування та ремонт двигунів</a
+                >
+              </li>
+
+              <li class="services__item">
+                <a href="" class="services__link"
+                  >Обслуговування та ремонт трансмісій</a
+                >
+              </li>
+
+              <li class="services__item">
+                <a href="" class="services__link"
+                  >Діагностика підвіски на стенді</a
+                >
+              </li>
+
+              <li class="services__item">
+                <a href="" class="services__link">Ремонт ходової частини</a>
+              </li>
+
+              <li class="services__item">
+                <a href="" class="services__link">Розвал-сходження 3D</a>
+              </li>
+
+              <li class="services__item">
+                <a href="" class="services__link"
+                  >Ремонт рульових рейок та гідропідсилювачів</a
+                >
+              </li>
+
+              <li class="services__item">
+                <a href="" class="services__link"
+                  >Ремонт та заправка кондиціонерів</a
+                >
+              </li>
+
+              <li class="services__item">
+                <a href="" class="services__link"
+                  >Автоелектрика та комп'ютерна діагностика</a
+                >
+              </li>
+
+              <li class="services__item">
+                <a href="" class="services__link"
+                  >Комплексна діагностика перед купівлею автомобіля</a
+                >
+              </li>
+
+              <li class="services__item">
+                <a href="" class="services__link"
+                  >Рихтовка та відновлення геометрії кузова</a
+                >
+              </li>
+
+              <li class="services__item">
+                <a href="" class="services__link"
+                  >Фарбування та полірування авто</a
+                >
+              </li>
+
+              <li class="services__item">
+                <a href="" class="services__link"
+                  >Шиномонтаж та сезонне зберігання коліс</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Integrations (Інтеграції) -->
+      <section class="integrations">
+        <div class="integrations__container">
+          <p class="integrations__text">бренди авто</p>
+          <h2 class="integrations__title">
+            більше 100+ <span class="integrations__title-span">інтеграцій</span>
+          </h2>
+
+          <ul class="integrations__list">
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+
+            <li class="integrations__item">
+              <svg class="integrations__icon">
+                <use href=""></use>
+              </svg>
+            </li>
+          </ul>
+
+          <button class="intagrations__button">переглянути всі</button>
+        </div>
+      </section>
+
+      <!-- Section Gallery (Галерея) -->
+      <section class="gallery">
+        <div class="gallery__container">
+          <h2 class="gallery__title">Hidden</h2>
+
+          <ul class="gallery__list">
+            <!-- First gallery photo (перша фотографія) -->
+            <li class="gallery__item">
+              <picture>
+                <source srcset="" />
+                <img class="gallery__img" src="" alt="" />
+              </picture>
+            </li>
+
+            <!-- Second gallery photo (друга фотографія) -->
+            <li class="gallery__item">
+              <picture>
+                <source srcset="" />
+                <img class="gallery__img" src="" alt="" />
+              </picture>
+            </li>
+
+            <!-- Third gallery photo (третя фотографія) -->
+            <li class="gallery__item">
+              <picture>
+                <source srcset="" />
+                <img class="gallery__img" src="" alt="" />
+              </picture>
+            </li>
+
+            <!-- Fourth gallery photo (четверта фотографія) -->
+            <li class="gallery__item">
+              <picture>
+                <source srcset="" />
+                <img class="gallery__img" src="" alt="" />
+              </picture>
+            </li>
+
+            <!-- Fifth gallery photo (пʼята фотографія) -->
+            <li class="gallery__item">
+              <picture>
+                <source srcset="" />
+                <img class="gallery__img" src="" alt="" />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section Catalog (Каталог товарів) -->
+      <section class="catalog">
+        <div class="catalog__container">
+          <h2 class="catalog__title">
+            каталог <span class="catalog__title-span">товарів</span>
+          </h2>
+          <p class="catalog__text">
+            Quidem autem ipsam. Temporibus maiores velit qui in. Non omnis
+            eligendi occaecati voluptatem deserunt.
+          </p>
+
+          <ul class="catalog__list">
+            <!-- First product (перший товар) -->
+            <li class="catalog__item">
+              <div class="catalog__wrapper">
+                <picture
+                  ><source srcset="" />
+                  <img class="catalog__img" src="" alt=""
+                /></picture>
+                <h3 class="catalog__item-title">товар №1</h3>
+                <p class="catalog__item-description">
+                  Molestias reprehenderit molestiae rerum.
+                </p>
+              </div>
+            </li>
+
+            <!-- Second product (другий товар) -->
+            <li class="catalog__item">
+              <div class="catalog__wrapper">
+                <picture
+                  ><source srcset="" />
+                  <img class="catalog__img" src="" alt=""
+                /></picture>
+                <h3 class="catalog__item-title">товар №2</h3>
+                <p class="catalog__item-description">
+                  Sunt aut et voluptate numquam culpa quasi incidunt quam eos.
+                </p>
+              </div>
+            </li>
+
+            <!-- Third product (третій товар) -->
+            <li class="catalog__item">
+              <div class="catalog__wrapper">
+                <picture
+                  ><source srcset="" />
+                  <img class="catalog__img" src="" alt=""
+                /></picture>
+                <h3 class="catalog__item-title">товар №3</h3>
+                <p class="catalog__item-description">
+                  Qui quia rerum est qui id distinctio voluptates rerum autem.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <button class="intagrations__button">переглянути всі</button>
+        </div>
+      </section>
+
+      <!-- Section Work (Праця) -->
+      <section class="work">
+        <div class="work__container">
+          <p class="work__text">процес обслуговування</p>
+          <h2 class="work__title">
+            Як ми <span class="work__title-span">працюємо</span>
+          </h2>
+
+          <div class="work__wrapper">
+            <ul class="work__list">
+              <!-- First element (Перший елемент)-->
+              <li class="work__item">
+                <svg class="work__icon">
+                  <use href=""></use>
+                </svg>
+                <h3 class="work__item-title">консультація</h3>
+                <p class="work__item-description">
+                  From they fine john he give of rich he. They age and draw mrs
+                  like. Improving end distrusts may instantly.
+                </p>
+              </li>
+
+              <!-- An arrow (Стрілочка)-->
+              <li class="work__item">
+                <svg class="work__icon">
+                  <use href=""></use>
+                </svg>
+              </li>
+
+              <!-- Second element (Другий елемент)-->
+              <li class="work__item">
+                <svg class="work__icon">
+                  <use href=""></use>
+                </svg>
+                <h3 class="work__item-title">ремонт</h3>
+                <p class="work__item-description">
+                  From they fine john he give of rich he. They age and draw mrs
+                  like. Improving end distrusts may instantly.
+                </p>
+              </li>
+
+              <!-- An arrow (Стрілочка)-->
+              <li class="work__item">
+                <svg class="work__icon">
+                  <use href=""></use>
+                </svg>
+              </li>
+
+              <!-- Third element (Третій елемент)-->
+              <li class="work__item">
+                <svg class="work__icon">
+                  <use href=""></use>
+                </svg>
+                <h3 class="work__item-title">отримання</h3>
+                <p class="work__item-description">
+                  From they fine john he give of rich he. They age and draw mrs
+                  like. Improving end distrusts may instantly.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Achievements -->
+      <section class="achievements">
+        <div class="achievements__container">
+          <p class="achievements__text">трохи статистики про нас</p>
+          <h2 class="achievements__title">
+            наші <span class="achievements__title-span">досягнення</span>
+          </h2>
+
+          <div class="achievements__row">
+            <ul class="achievements__list">
+              <!-- First element (Перший елемент) -->
+              <li class="achievements__item">
+                <div class="achievements__box">
+                  <p class="achievements__item-number">6</p>
+                </div>
+                <h3 class="achievements__item-description">
+                  років <span>досвіду</span>
+                </h3>
+              </li>
+
+              <!-- Second element (Другий елемент) -->
+              <li class="achievements__item">
+                <div class="achievements__box">
+                  <p class="achievements__item-number">11</p>
+                </div>
+                <h3 class="achievements__item-description">
+                  кваліфікованих <span>майстрів</span>
+                </h3>
+              </li>
+
+              <!-- Third element (Третій елемент) -->
+              <li class="achievements__item">
+                <div class="achievements__box">
+                  <p class="achievements__item-number">1456</p>
+                </div>
+                <h3 class="achievements__item-description">
+                  задоволених <span>клієнтів</span>
+                </h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Gallery (2) -->
+      <section class="gallery">
+        <div class="gallery__container">
+          <h2 class="gallery__title">Hidden</h2>
+
+          <ul class="gallery__list">
+            <!-- First gallery photo (перша фотографія) -->
+            <li class="gallery__item">
+              <picture>
+                <source srcset="" />
+                <img class="gallery__img" src="" alt="" />
+              </picture>
+            </li>
+
+            <!-- Second gallery photo (друга фотографія) -->
+            <li class="gallery__item">
+              <picture>
+                <source srcset="" />
+                <img class="gallery__img" src="" alt="" />
+              </picture>
+            </li>
+
+            <!-- Third gallery photo (третя фотографія) -->
+            <li class="gallery__item">
+              <picture>
+                <source srcset="" />
+                <img class="gallery__img" src="" alt="" />
+              </picture>
+            </li>
+
+            <!-- Fourth gallery photo (четверта фотографія) -->
+            <li class="gallery__item">
+              <picture>
+                <source srcset="" />
+                <img class="gallery__img" src="" alt="" />
+              </picture>
+            </li>
+
+            <!-- Fifth gallery photo (пʼята фотографія) -->
+            <li class="gallery__item">
+              <picture>
+                <source srcset="" />
+                <img class="gallery__img" src="" alt="" />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section Advantages (Переваги) -->
+      <section class="advantages">
+        <div class="advantages__container">
+          <p class="advantages__text">переваги</p>
+          <h2 class="advantages__title">чому <span>саме ми?</span></h2>
+
+          <ul class="advantages__list">
+            <!-- First card (Перша картка)-->
+            <li class="advantages__item">
+              <svg class="advantages__icon">
+                <use href=""></use>
+              </svg>
+
+              <h3 class="advantages__item-title">найкращий сервіс</h3>
+              <p class="advantages__item-description">
+                Letter of on become he tended active enable to. Vicinity
+                relation sensible sociable surprise screened no up as.
+              </p>
+            </li>
+
+            <!-- Second card (Друга картка)-->
+            <li class="advantages__item">
+              <svg class="advantages__icon">
+                <use href=""></use>
+              </svg>
+
+              <h3 class="advantages__item-title">Найкраща команда</h3>
+              <p class="advantages__item-description">
+                Led ask possible mistress relation elegance eat likewise
+                debating. By message or am nothing amongst chiefly address.
+              </p>
+            </li>
+
+            <!-- Third card (Третя картка)-->
+            <li class="advantages__item">
+              <svg class="advantages__icon">
+                <use href=""></use>
+              </svg>
+
+              <h3 class="advantages__item-title">Найкращий результат</h3>
+              <p class="advantages__item-description">
+                Ham windows sixteen who inquiry fortune demands. Is be upon sang
+                fond must shew. Really boy law county she unable her sister.
+              </p>
+            </li>
+          </ul>
+
+          <button class="advantages__button">безкоштовна консультація</button>
+        </div>
+      </section>
+
+      <!-- Section Consultation (Консультація) -->
+      <section class="consultation">
+        <div class="consultation__container">
+          <!-- Left part (Ліва частина) -->
+          <div class="consultation__left">
+            <h2 class="consultation__title">
+              Отримайте безкоштовну консультацію з нашим експертом з автосервісу
+            </h2>
+            <p class="consultation__text">
+              Запишіться на консультацію онлайн або дзвоніть нам +380636363633
+            </p>
+          </div>
+
+          <!-- Right part (Права частина) -->
+          <div class="consultation__right">
+            <button class="consultation__button">
+              безкоштовна консультація
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Feedbacks (Відгуки) -->
+      <section class="feedbacks">
+        <div class="feedbacks__container">
+          <p class="feedbacks__text">що говорять про нас</p>
+          <h2 class="feedbacks__title">
+            відгуки <span class="feedbacks__title-span">клієнтів</span>
+          </h2>
+
+          <ul class="feedbacks__list">
+            <!-- First card (Перша картка)-->
+            <li class="feedbacks__item">
+              <div class="feedbacks__card">
+                <picture>
+                  <source srcset="" />
+                  <img class="feedbacks__card-img" src="" alt="" />
+                </picture>
+
+                <!-- Thumb with description (Тумба з описом)-->
+                <div class="feedbacks__card-thumb">
+                  <svg class="feedbacks__icon">
+                    <use href=""></use>
+                  </svg>
+
+                  <div class="feedbacks__card-description">
+                    <p class="feedbacks__card-text">
+                      I had a pre-purchase inspection on a Mazda. I was looking
+                      to buy it and they let me bring it in on a Saturday with
+                      no appoint. Great guys! I recommend this service to
+                      everyone who looks for quality!
+                    </p>
+                    <h3 class="feedbacks__card-client">William Hill</h3>
+                    <p class="feedbacks__card-date">26 September, 2022</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Second card (Друга картка)-->
+            <li class="feedbacks__item">
+              <div class="feedbacks__card">
+                <picture>
+                  <source srcset="" />
+                  <img class="feedbacks__card-img" src="" alt="" />
+                </picture>
+
+                <!-- Thumb with description (Тумба з описом)-->
+                <div class="feedbacks__card-thumb">
+                  <svg class="feedbacks__icon">
+                    <use href=""></use>
+                  </svg>
+
+                  <div class="feedbacks__card-description">
+                    <p class="feedbacks__card-text">
+                      I had a pre-purchase inspection on a Mazda. I was looking
+                      to buy it and they let me bring it in on a Saturday with
+                      no appoint. Great guys! I recommend this service to
+                      everyone who looks for quality!
+                    </p>
+                    <h3 class="feedbacks__card-client">William Hill</h3>
+                    <p class="feedbacks__card-date">26 September, 2022</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Third card (Третя картка)-->
+            <li class="feedbacks__item">
+              <div class="feedbacks__card">
+                <picture>
+                  <source srcset="" />
+                  <img class="feedbacks__card-img" src="" alt="" />
+                </picture>
+
+                <!-- Thumb with description (Тумба з описом)-->
+                <div class="feedbacks__card-thumb">
+                  <svg class="feedbacks__icon">
+                    <use href=""></use>
+                  </svg>
+
+                  <div class="feedbacks__card-description">
+                    <p class="feedbacks__card-text">
+                      I had a pre-purchase inspection on a Mazda. I was looking
+                      to buy it and they let me bring it in on a Saturday with
+                      no appoint. Great guys! I recommend this service to
+                      everyone who looks for quality!
+                    </p>
+                    <h3 class="feedbacks__card-client">William Hill</h3>
+                    <p class="feedbacks__card-date">26 September, 2022</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contacts (Контакти)-->
+      <section class="contacts">
+        <div class="contacts__container">
+          <!-- Left part (Ліва частина)-->
+          <div class="contacts__left">
+            <!-- Schedule (Графік)-->
+            <div class="contacts-schedule">
+              <h2 class="contacts-schedule__title">
+                графік <span class="contacts-schedule__title-span">роботи</span>
+              </h2>
+              <p class="contacts-schedule__text">
+                Ми цінуємо кожного клієнта і пишаємось що 60% клієнтів
+                повертаються до нас знову.
+              </p>
+
+              <!-- Box (Бокс)-->
+              <div class="contacts-schedule__box">
+                <svg class="contacts-schedule__icon">
+                  <use href=""></use>
+                </svg>
+
+                <div class="contacts-schedule__column-d">
+                  <p class="contacts-schedule__days">пн.- сб.</p>
+                  <p class="contacts-schedule__days">нд.</p>
+                </div>
+
+                <div class="contacts-schedule__column-h">
+                  <p class="contacts-schedule__hours">8:00 - 20:00​</p>
+                  <p class="contacts-schedule__hours">9:00 - 18:00</p>
+                </div>
+
+                <p class="contacts-schedule__weekend">БЕЗ ВИХІДНИХ</p>
+              </div>
+            </div>
+
+            <!-- Contact (Контакти)-->
+            <div class="contacts-contact">
+              <h2 class="contacts-contact__title">
+                наші <span class="contacts-contact__title-span">контакти</span>
+              </h2>
+              <p class="contacts-contact__text">
+                Ми цінуємо кожного клієнта і пишаємось що 60% клієнтів
+                повертаються до нас знову.
+              </p>
+
+              <!-- Box (Бокс)-->
+              <div class="contacts-contact__box">
+                <div class="contacts-contact__row">
+                  <svg class="contacts-contact__icon">
+                    <use href=""></use>
+                  </svg>
+
+                  <a href="tel:380636363633" class="contacts-contact__link"
+                    >+380636363633</a
+                  >
+                </div>
+
+                <div class="contacts-contact__row">
+                  <svg class="contacts-contact__icon">
+                    <use href=""></use>
+                  </svg>
+
+                  <a
+                    href="mailto:info@autoplatform.com.ua"
+                    class="contacts-contact__link"
+                    >info@autoplatform.com.ua</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Address (Адреса)-->
+            <div class="contacts-address">
+              <h2 class="contacts-address__title">
+                наша <span class="contacts-contact__title-span">адреса</span>
+              </h2>
+
+              <a href="" class="contacts-address__link"
+                >м.Київ, вул.Магнітогорська, 1а</a
+              >
+
+              <!-- A map (Карта)-->
+              <div class="contacts-address__map" id="map"></div>
+            </div>
+          </div>
+
+          <!-- Right part (Права частина)-->
+          <div class="contacts__right">
+            <h2 class="contacts__right-title">
+              записатись на
+              <span class="contacts__right-title-span">консультацію</span>
+            </h2>
+            <p class="contacts__right-text">
+              Ми завжди раді вашому візиту в Auto Platform, але краще
+              заздалегідь зарезервувати час
+            </p>
+
+            <!-- Form (Форма)-->
+            <form class="contacts-form">
+              <!-- Phone num (Номер тф)-->
+              <div class="contacts-form__field">
+                <label for="tel" class="contacts-form__label"
+                  >телефон <span>*</span></label
+                >
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  class="contacts-form__input"
+                  placeholder="+380 _ _ _  _ _ _  _ _*"
+                  required
+                />
+              </div>
+
+              <!-- Name (Імʼя)-->
+              <div class="contacts-form__field">
+                <label for="name" class="contacts-form__label"
+                  >ім`я <span>*</span></label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="contacts-form__input"
+                  placeholder="Ваше ім’я*"
+                  required
+                />
+              </div>
+
+              <!-- Email (Пошла)-->
+              <div class="contacts-form__field">
+                <label for="email" class="contacts-form__label">еmail</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="contacts-form__input"
+                  placeholder="Ваш e-mail"
+                />
+              </div>
+
+              <!-- Comment (Коментрар)-->
+              <div class="contacts-form__field">
+                <label for="comment" class="contacts-form__label"
+                  >повідомлення</label
+                >
+                <textarea
+                  name="comment"
+                  id="comment"
+                  placeholder="Ваше повідомлення"
+                  cols="30"
+                  rows="10"
+                  class="contacts-form__comment"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="contacts-form__button">
+                відправити
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer (Футер)-->
+    <footer class="footer">
+      <div class="footer__container">
+        <a class="footer__logo" href="./index.html">
+          <img src="" alt="Logo" />
+        </a>
+
+        <!-- Navigation (Навігація)-->
+        <ul class="footer__list">
+          <li class="footer__item footer__item-active">
+            <a href="./index.html" class="footer__link">Головна</a>
           </li>
-
-          <li class="site-nav__item">
-            <a href="" class="site-nav__link">Послуги</a>
+          <li class="footer__item">
+            <a href="" class="footer__link">Товари</a>
           </li>
-          <li class="site-nav__item">
-            <a href="" class="site-nav__link">Про нас</a>
+          <li class="footer__item">
+            <a href="" class="footer__link">Послуги</a>
           </li>
-          <li class="site-nav__item">
-            <a href="" class="site-nav__link">Відгуки</a>
+          <li class="footer__item">
+            <a href="" class="footer__link">Регламент</a>
           </li>
-          <li class="site-nav__item">
-            <a href="" class="site-nav__link">Контакти</a>
+          <li class="footer__item">
+            <a href="" class="footer__link">Контакти</a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__link">Блог</a>
           </li>
         </ul>
-      </nav>
+
+        <button class="footer__button">безкоштовна консультація</button>
+      </div>
+    </footer>
+  </body>
+</html>
