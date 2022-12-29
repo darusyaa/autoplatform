@@ -81,10 +81,12 @@
   font-family: inherit;
   text-align: center;
 
-  border-radius: 4px;
+  border-radius: 0px;
+  border-width: 0;
 
   background-color: $bcg-color;
   color: $color;
+  text-transform: uppercase;
 
   cursor: pointer;
 }
