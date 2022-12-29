@@ -1,10 +1,13 @@
-$main-title-color: #1B242B;
-$white-color: #FFFFFF;
-$accent-color: #F7A801;
-$text-color: #8D98A1;
-$second-container-color: #F6F6F7;
-$footer-color: #19191A;
+$main-title-color: #1b242b;
+$white-color: #ffffff;
+$accent-color: #f7a801;
+$text-color: #8d98a1;
+$second-container-color: #f6f6f7;
+$footer-color: #19191a;
 
 // cubic vars
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+@function lineHeight($font-size, $line-height) {
+  @return ($line-height / $font-size);
+}

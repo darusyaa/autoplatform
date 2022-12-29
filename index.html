@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Autoplatform</title>
-    <!-- Fonts -->
 
+    <!-- Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Roboto:wght@300;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Manrope:wght@400;800&family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Raleway:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
-    >
+    />
 
     <!-- Normalize -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    >
+    />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/main.min.css" >
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -29,8 +29,8 @@
         <!-- Site-nav (Навігація)-->
         <nav class="site-nav">
           <!-- Logo (Лого)-->
-          <a href="./index.html">
-            <img src="#" alt="Logo" >
+          <a href="./index.html" class="header__logo">
+            <img src="./images/icons/logo.svg" alt="Logo" />
           </a>
 
           <ul class="site-nav__list">
@@ -55,18 +55,326 @@
           </ul>
         </nav>
 
-        <!-- Search (Пошук) -->
-        <div class="header-search">
-          <svg class="header-search__icon">
-            <use href=""></use>
-          </svg>
+        <!-- Contacts (Контакти) -->
+        <div class="header-contact">
+          <ul class="header-contact__list">
+            <li class="header-contact__item">
+              <a href="tel:+380994401313" class="header-contact__link">
+                <svg class="header-contact__icon" width="16" height="16">
+                  <use href="./images/icons/header/header.svg#tel"></use>
+                </svg>
+                +38 (099) 440-13-13
+              </a>
+            </li>
+            <li class="header-contacts__item">
+              <a href="tel:+380994401313" class="header-contact__link">
+                <svg class="header-contact__icon" width="16" height="16">
+                  <use href="./images/icons/header/header.svg#tel"></use>
+                </svg>
+                +38 (099) 440-13-13
+              </a>
+            </li>
+          </ul>
         </div>
 
         <!-- Consultation (Консультація) -->
         <div class="header-consultation">
-          <button class="header-consultation__button">
-            безкоштовна консультація
+          <button class="header-consultation__button">передзвоніть мені</button>
+        </div>
+
+        <!-- Socials  (Соц мережі) -->
+        <div class="header-socials">
+          <ul class="header-socials__list">
+            <li class="header-socials__item">
+              <a
+                href="https://www.instagram.com/autoplatform.service"
+                target="_blank"
+                class="header-socials__link"
+              >
+                <svg class="header-socials__icon">
+                  <use href="./images/icons/social/social.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-socials__item">
+              <a href="#" target="_blank" class="header-socials__link">
+                <svg class="header-socials__icon">
+                  <use href="./images/icons/header/header.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-socials__item">
+              <a
+                href="https://www.facebook.com/autoplatform.service"
+                target="_blank"
+                class="header-socials__link"
+              >
+                <svg class="header-socials__icon">
+                  <use href="./images/icons/header/header.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-socials__item">
+              <a
+                href="https://www.youtube.com/channel/UCnWirVZuCBP8U4UENYSgtbw"
+                target="_blank"
+                class="header-socials__link"
+              >
+                <svg class="header-socials__icon">
+                  <use href="./images/icons/header/header.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tablet  -->
+        <button
+          type="button"
+          class="tablet__btn tablet__btn--open"
+          aria-expanded="false"
+        >
+          <svg
+            class="tablet__icon"
+            width="40"
+            height="40"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use
+              class="tablet__use tablet__use--open"
+              href="./images/icons/header/header.svg#open"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="tablet-menu">
+          <div class="tablet__container">
+            <button
+              type="button"
+              class="tablet__btn tablet__btn--close"
+              aria-expanded="false"
+            >
+              <svg
+                class="tablet__icon"
+                width="40"
+                height="40"
+                aria-label="Перемикач мобільного меню"
+              >
+                <use
+                  class="tablet__use tablet__use--close"
+                  href="./images/icons/header/header.svg#close"
+                ></use>
+              </svg>
+            </button>
+
+            <ul class="tablet-nav__list">
+              <li class="tablet-nav__item tablet-nav__item-active">
+                <a href="./index.html" class="tablet-nav__link">Головна</a>
+              </li>
+              <li class="tablet-nav__item">
+                <a href="" class="tablet-nav__link">Товари</a>
+              </li>
+              <li class="tablet-nav__item">
+                <a href="" class="tablet-nav__link">Послуги</a>
+              </li>
+              <li class="tablet-nav__item">
+                <a href="" class="tablet-nav__link">Регламент</a>
+              </li>
+              <li class="tablet-nav__item">
+                <a href="" class="tablet-nav__link">Контакти</a>
+              </li>
+              <li class="tablet-nav__item">
+                <a href="" class="tablet-nav__link">Блог</a>
+              </li>
+            </ul>
+
+            <ul class="tablet-socials__list">
+              <li class="tablet-socials__item">
+                <a
+                  href="https://www.instagram.com/autoplatform.service"
+                  target="_blank"
+                  class="tablet-socials__link"
+                >
+                  <svg class="tablet-socials__icon">
+                    <use
+                      href="./images/icons/social/social.svg#instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="tablet-socials__item">
+                <a href="#" target="_blank" class="tablet-socials__link">
+                  <svg class="tablet-socials__icon">
+                    <use href="./images/icons/header/header.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="tablet-socials__item">
+                <a
+                  href="https://www.facebook.com/autoplatform.service"
+                  target="_blank"
+                  class="tablet-socials__link"
+                >
+                  <svg class="tablet-socials__icon">
+                    <use href="./images/icons/header/header.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="tablet-socials__item">
+                <a
+                  href="https://www.youtube.com/channel/UCnWirVZuCBP8U4UENYSgtbw"
+                  target="_blank"
+                  class="tablet-socials__link"
+                >
+                  <svg class="tablet-socials__icon">
+                    <use href="./images/icons/header/header.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mobile -->
+        <div class="mobile__main">
+          <a href="./index.html" class="mobile__logo">
+            <img src="./images/icons/logo.svg" alt="Logo" />
+          </a>
+
+          <button
+            type="button"
+            class="mobile__btn mobile__btn--open"
+            aria-expanded="false"
+          >
+            <svg
+              class="mobile__icon"
+              width="40"
+              height="40"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use
+                class="mobile__use mobile__use--open"
+                href="./images/icons/header/header.svg#open"
+              ></use>
+            </svg>
           </button>
+        </div>
+
+        <div class="mobile-menu is-open">
+          <div class="mobile__container">
+            <button
+              type="button"
+              class="mobile__btn mobile__btn--close"
+              aria-expanded="false"
+            >
+              <svg
+                class="mobile__icon"
+                width="40"
+                height="40"
+                aria-label="Перемикач мобільного меню"
+              >
+                <use
+                  class="mobile__use mobile__use--close"
+                  href="./images/icons/header/header.svg#close"
+                ></use>
+              </svg>
+            </button>
+
+            <a href="./index.html" class="mobile__logo">
+              <img src="./images/icons/logo.svg" alt="Logo" />
+            </a>
+
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item mobile-nav__item-active">
+                <a href="./index.html" class="mobile-nav__link">Головна</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">Товари</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">Послуги</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">Регламент</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">Контакти</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">Блог</a>
+              </li>
+            </ul>
+
+            <ul class="mobile-contact__list">
+              <li class="mobile-contact__item">
+                <a href="tel:+380994401313" class="mobile-contact__link">
+                  <svg class="mobile-contact__icon" width="16" height="16">
+                    <use href="./images/icons/header/header.svg#tel"></use>
+                  </svg>
+                  +38 (099) 440-13-13
+                </a>
+              </li>
+              <li class="mobile-contacts__item">
+                <a href="tel:+380994401313" class="mobile-contact__link">
+                  <svg class="mobile-contact__icon" width="16" height="16">
+                    <use href="./images/icons/header/header.svg#tel"></use>
+                  </svg>
+                  +38 (099) 440-13-13
+                </a>
+              </li>
+            </ul>
+
+            <div class="mobile-consultation">
+              <button class="mobile-consultation__button">
+                передзвоніть мені
+              </button>
+            </div>
+
+            <ul class="mobile-socials__list">
+              <li class="mobile-socials__item">
+                <a
+                  href="https://www.instagram.com/autoplatform.service"
+                  target="_blank"
+                  class="mobile-socials__link"
+                >
+                  <svg class="mobile-socials__icon">
+                    <use
+                      href="./images/icons/social/social.svg#instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-socials__item">
+                <a href="#" target="_blank" class="mobile-socials__link">
+                  <svg class="mobile-socials__icon">
+                    <use href="./images/icons/header/header.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-socials__item">
+                <a
+                  href="https://www.facebook.com/autoplatform.service"
+                  target="_blank"
+                  class="mobile-socials__link"
+                >
+                  <svg class="mobile-socials__icon">
+                    <use href="./images/icons/header/header.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-socials__item">
+                <a
+                  href="https://www.youtube.com/channel/UCnWirVZuCBP8U4UENYSgtbw"
+                  target="_blank"
+                  class="mobile-socials__link"
+                >
+                  <svg class="mobile-socials__icon">
+                    <use href="./images/icons/header/header.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -77,36 +385,66 @@
       <section class="hero">
         <div class="hero__container">
           <!-- Slider (Слайдер)-->
-          <div class="hero__slider">
+          <div class="hero-slider">
             <!-- Arrows (стрілочки назад/вперед) -->
-            <div class="hero__slider-prev">
-              <svg class="hero__slider__icon">
-                <use href=""></use>
+            <div class="hero-slider__prev">
+              <svg class="hero-slider__icon">
+                <use href="./images/icons/hero/prev.svg"></use>
               </svg>
             </div>
-            <div class="hero__slider-next">
-              <svg class="hero__slider__icon">
-                <use href=""></use>
+            <div class="hero-slider__next">
+              <svg class="hero-slider__icon">
+                <use href="./images/icons/hero/next.svg"></use>
               </svg>
             </div>
 
             <!-- Slider-content (Контент слайдеру)-->
-            <div class="hero__slider__content">
+            <div class="hero-slider__content">
               <h1 class="hero__title">повноцінне відновлення авто з сша</h1>
             </div>
 
             <!-- Slider-wrapper (Обертка слайдеру)-->
-            <div class="hero__slider-wrapper">
+            <div class="hero-slider__wrapper">
               <!-- First slide (Перший слайд (фото)) -->
-              <div class="hero__slider-slide">
+              <div class="hero-slider__slide">
                 <picture>
-                  <source srcset="#" >
-                  <img class="hero__slider-img" src="#" alt="" >
+                  <source srcset="#" />
+                  <img class="hero-slider__img" src="#" alt="" />
                 </picture>
               </div>
 
               <!-- Second slide (Другий слайд (фото)) і тд
               ........-->
+            </div>
+
+            <div class="slider-dots">
+              <ul class="slider-dots__list">
+                <li class="slider-dots__item">
+                  <svg class="slider-dots__icon">
+                    <use href="./images/icons/hero/dot.svg"></use>
+                  </svg>
+                </li>
+                <li class="slider-dots__item">
+                  <svg class="slider-dots__icon">
+                    <use href="./images/icons/hero/dot.svg"></use>
+                  </svg>
+                </li>
+                <li class="slider-dots__item">
+                  <svg class="slider-dots__icon">
+                    <use href="./images/icons/hero/dot.svg"></use>
+                  </svg>
+                </li>
+                <li class="slider-dots__item">
+                  <svg class="slider-dots__icon">
+                    <use href="./images/icons/hero/dot.svg"></use>
+                  </svg>
+                </li>
+                <li class="slider-dots__item">
+                  <svg class="slider-dots__icon">
+                    <use href="./images/icons/hero/dot.svg"></use>
+                  </svg>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -424,40 +762,40 @@
             <!-- First gallery photo (перша фотографія) -->
             <li class="gallery__item">
               <picture>
-                <source srcset="#" >
-                <img class="gallery__img" src="#" alt="" >
+                <source srcset="#" />
+                <img class="gallery__img" src="#" alt="" />
               </picture>
             </li>
 
             <!-- Second gallery photo (друга фотографія) -->
             <li class="gallery__item">
               <picture>
-                <source srcset="#" >
-                <img class="gallery__img" src="#" alt="" >
+                <source srcset="#" />
+                <img class="gallery__img" src="#" alt="" />
               </picture>
             </li>
 
             <!-- Third gallery photo (третя фотографія) -->
             <li class="gallery__item">
               <picture>
-                <source srcset="#" >
-                <img class="gallery__img" src="#" alt="" >
+                <source srcset="#" />
+                <img class="gallery__img" src="#" alt="" />
               </picture>
             </li>
 
             <!-- Fourth gallery photo (четверта фотографія) -->
             <li class="gallery__item">
               <picture>
-                <source srcset="#" >
-                <img class="gallery__img" src="#" alt="" >
+                <source srcset="#" />
+                <img class="gallery__img" src="#" alt="" />
               </picture>
             </li>
 
             <!-- Fifth gallery photo (пʼята фотографія) -->
             <li class="gallery__item">
               <picture>
-                <source srcset="#" >
-                <img class="gallery__img" src="#" alt="" >
+                <source srcset="#" />
+                <img class="gallery__img" src="#" alt="" />
               </picture>
             </li>
           </ul>
@@ -480,9 +818,9 @@
             <li class="catalog__item">
               <div class="catalog__wrapper">
                 <picture
-                  ><source srcset="#" >
+                  ><source srcset="#" />
                   <img class="catalog__img" src="#" alt=""
-                ></picture>
+                /></picture>
                 <h3 class="catalog__item-title">товар №1</h3>
                 <p class="catalog__item-description">
                   Molestias reprehenderit molestiae rerum.
@@ -494,9 +832,9 @@
             <li class="catalog__item">
               <div class="catalog__wrapper">
                 <picture
-                  ><source srcset="#" >
+                  ><source srcset="#" />
                   <img class="catalog__img" src="#" alt=""
-                ></picture>
+                /></picture>
                 <h3 class="catalog__item-title">товар №2</h3>
                 <p class="catalog__item-description">
                   Sunt aut et voluptate numquam culpa quasi incidunt quam eos.
@@ -508,9 +846,9 @@
             <li class="catalog__item">
               <div class="catalog__wrapper">
                 <picture
-                  ><source srcset="#" >
+                  ><source srcset="#" />
                   <img class="catalog__img" src="#" alt=""
-                ></picture>
+                /></picture>
                 <h3 class="catalog__item-title">товар №3</h3>
                 <p class="catalog__item-description">
                   Qui quia rerum est qui id distinctio voluptates rerum autem.
@@ -640,40 +978,40 @@
             <!-- First gallery photo (перша фотографія) -->
             <li class="gallery__item">
               <picture>
-                <source srcset="#" >
-                <img class="gallery__img" src="#" alt="" >
+                <source srcset="#" />
+                <img class="gallery__img" src="#" alt="" />
               </picture>
             </li>
 
             <!-- Second gallery photo (друга фотографія) -->
             <li class="gallery__item">
               <picture>
-                <source srcset="#" >
-                <img class="gallery__img" src="#" alt="" >
+                <source srcset="#" />
+                <img class="gallery__img" src="#" alt="" />
               </picture>
             </li>
 
             <!-- Third gallery photo (третя фотографія) -->
             <li class="gallery__item">
               <picture>
-                <source srcset="#" >
-                <img class="gallery__img" src="#" alt="" >
+                <source srcset="#" />
+                <img class="gallery__img" src="#" alt="" />
               </picture>
             </li>
 
             <!-- Fourth gallery photo (четверта фотографія) -->
             <li class="gallery__item">
               <picture>
-                <source srcset="#" >
-                <img class="gallery__img" src="#" alt="" >
+                <source srcset="#" />
+                <img class="gallery__img" src="#" alt="" />
               </picture>
             </li>
 
             <!-- Fifth gallery photo (пʼята фотографія) -->
             <li class="gallery__item">
               <picture>
-                <source srcset="#" >
-                <img class="gallery__img" src="#" alt="" >
+                <source srcset="#" />
+                <img class="gallery__img" src="#" alt="" />
               </picture>
             </li>
           </ul>
@@ -766,8 +1104,8 @@
             <li class="feedbacks__item">
               <div class="feedbacks__card">
                 <picture>
-                  <source srcset="#" >
-                  <img class="feedbacks__card-img" src="#" alt="" >
+                  <source srcset="#" />
+                  <img class="feedbacks__card-img" src="#" alt="" />
                 </picture>
 
                 <!-- Thumb with description (Тумба з описом)-->
@@ -794,8 +1132,8 @@
             <li class="feedbacks__item">
               <div class="feedbacks__card">
                 <picture>
-                  <source srcset="#" >
-                  <img class="feedbacks__card-img" src="#" alt="" >
+                  <source srcset="#" />
+                  <img class="feedbacks__card-img" src="#" alt="" />
                 </picture>
 
                 <!-- Thumb with description (Тумба з описом)-->
@@ -822,8 +1160,8 @@
             <li class="feedbacks__item">
               <div class="feedbacks__card">
                 <picture>
-                  <source srcset="#" >
-                  <img class="feedbacks__card-img" src="#" alt="" >
+                  <source srcset="#" />
+                  <img class="feedbacks__card-img" src="#" alt="" />
                 </picture>
 
                 <!-- Thumb with description (Тумба з описом)-->
@@ -960,7 +1298,7 @@
                   class="contacts-form__input"
                   placeholder="+380 _ _ _  _ _ _  _ _*"
                   required
-                >
+                />
               </div>
 
               <!-- Name (Імʼя)-->
@@ -975,7 +1313,7 @@
                   class="contacts-form__input"
                   placeholder="Ваше ім’я*"
                   required
-                >
+                />
               </div>
 
               <!-- Email (Пошла)-->
@@ -987,7 +1325,7 @@
                   id="email"
                   class="contacts-form__input"
                   placeholder="Ваш e-mail"
-                >
+                />
               </div>
 
               <!-- Comment (Коментрар)-->
@@ -1018,7 +1356,7 @@
     <footer class="footer">
       <div class="footer__container">
         <a class="footer__logo" href="./index.html">
-          <img src="#" alt="Logo" >
+          <img src="#" alt="Logo" />
         </a>
 
         <!-- Navigation (Навігація)-->

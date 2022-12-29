@@ -1,0 +1,63 @@
+.header {
+  background-color: transparent;
+  //   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  height: 97px;
+  display: flex;
+
+  width: 100%;
+  z-index: 1000;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &__container {
+    @include container(
+      $padd-top: 18px,
+      $padd-btm: 88px,
+      $padd-right: 24px,
+      $padd-left: 24px
+    );
+  }
+}
+
+.site-nav {
+  display: none;
+}
+
+.header-contact {
+  display: none;
+}
+
+.header-consultation {
+  display: none;
+}
+
+.header-socials {
+  display: none;
+}
+
+.tablet__btn {
+  display: none;
+}
+
+.tablet-menu {
+  display: none;
+}
+
+.mobile {
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 16px;
+  }
+  &__btn {
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+}
