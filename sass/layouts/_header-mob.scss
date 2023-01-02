@@ -1,6 +1,13 @@
 .mobile-menu {
   @include transitionTwo(opacity, visibility);
 
+//   position: fixed;
+//   top: 0;
+//   left: 30%;
+//   transform: translateX(-50%);
+//   width: 100vw;
+//   height: 100vh;
+
   position: absolute;
   top: 0;
   left: 0;
@@ -12,18 +19,95 @@
   z-index: 100;
   pointer-events: none;
   overflow-y: scroll;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
 }
 
-.mobile-menu.is-open {
-  //* до добавления джс оставлю 0, hidden
+.mobile {
+  &__container {
+    padding-top: 18px;
+    padding-bottom: 88px;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+  }
+  &__top {
+    @include headerMain();
+    margin-bottom: 24px;
+  }
 
-  //   opacity: 1;
-  opacity: 0;
-  //   visibility: visible;
-  visibility: hidden;
-  pointer-events: auto;
-}
+  &__btn {
+    fill: $white-color;
+  }
 
-.mobile__btn {
-  fill: $white-color;
+  &-nav {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    &__link {
+      @include fontPreset(700, 14px, 24px, 0.03em);
+      color: $white-color;
+      text-transform: capitalize;
+    }
+  }
+
+  &-contact {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    &__link {
+      @include fontPreset(700, 14px, 14px, 0);
+      color: $white-color;
+    }
+
+    &__icon {
+      margin-right: 8px;
+      fill: $white-color;
+    }
+  }
+
+  &-consultation {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+
+    &__button {
+      @include buttonSet(flex, 312px, 40px, 12px, 16px, $accent-color, black);
+      @include fontPreset(700, 14px, 14px, 0);
+      box-shadow: 4px 4px 0px #3da9f4;
+      justify-content: center;
+    }
+
+    &__icon {
+      margin-right: 8px;
+    }
+  }
+
+  &-socials {
+    &__list {
+      gap: 16px;
+      justify-content: center;
+      display: flex;
+    }
+
+    &__icon {
+      fill: $white-color;
+      width: 24px;
+      height: 24px;
+    }
+  }
 }

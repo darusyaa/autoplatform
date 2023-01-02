@@ -129,7 +129,7 @@
     }
 
     &__link {
-      @include fontPreset(700, 14px, 24px, 0);
+      @include fontPreset(700, 14px, 24px, 0.03em);
       color: $white-color;
       text-transform: capitalize;
     }

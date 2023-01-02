@@ -286,8 +286,9 @@
 
           <button
             type="button"
-            class="mobile__btn mobile__btn--open"
+            class="mobile__btn mobile__btn--open js-open-menu"
             aria-expanded="false"
+            aria-controls="mobile-menu-container"
           >
             <svg
               class="mobile__icon"
@@ -303,29 +304,32 @@
           </button>
         </div>
 
-        <div class="mobile-menu is-open">
-          <div class="mobile__container">
-            <button
-              type="button"
-              class="mobile__btn mobile__btn--close"
-              aria-expanded="false"
-            >
-              <svg
-                class="mobile__icon"
-                width="40"
-                height="40"
-                aria-label="Перемикач мобільного меню"
-              >
-                <use
-                  class="mobile__use mobile__use--close"
-                  href="./images/icons/header/header.svg#close"
-                ></use>
-              </svg>
-            </button>
+        <div class="mobile-menu js-menu-container">
+          <div class="mobile__container" id="mobile-menu-container">
+            <div class="mobile__top">
+              <a href="./index.html" class="mobile__logo">
+                <img src="./images/icons/logo.svg" alt="Logo" />
+              </a>
 
-            <a href="./index.html" class="mobile__logo">
-              <img src="./images/icons/logo.svg" alt="Logo" />
-            </a>
+              <button
+                type="button"
+                class="mobile__btn mobile__btn--close is-close js-close-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu-container"
+              >
+                <svg
+                  class="mobile__icon mobile__icon-close"
+                  width="40"
+                  height="40"
+                  aria-label="Перемикач мобільного меню"
+                >
+                  <use
+                    class="mobile__use mobile__use--close"
+                    href="./images/icons/header/header.svg#close"
+                  ></use>
+                </svg>
+              </button>
+            </div>
 
             <ul class="mobile-nav__list">
               <li class="mobile-nav__item mobile-nav__item-active">
@@ -369,6 +373,9 @@
 
             <div class="mobile-consultation">
               <button class="mobile-consultation__button">
+                <svg class="mobile-consultation__icon" width="16" height="16">
+                <use href="./images/icons/header/header.svg#tel"></use>
+              </svg>
                 передзвоніть мені
               </button>
             </div>
@@ -382,7 +389,7 @@
                 >
                   <svg class="mobile-socials__icon">
                     <use
-                      href="./images/icons/social/social.svg#instagram"
+                      href="./images/icons/header/header.svg#instagram"
                     ></use>
                   </svg>
                 </a>
@@ -1427,5 +1434,7 @@
         <button class="footer__button">безкоштовна консультація</button>
       </div>
     </footer>
+
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
