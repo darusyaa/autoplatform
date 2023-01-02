@@ -27,107 +27,115 @@
     <header class="header" id="header">
       <div class="header__container">
         <!-- Site-nav (Навігація)-->
-        <nav class="site-nav">
-          <!-- Logo (Лого)-->
-          <a href="./index.html" class="header__logo">
-            <img src="./images/icons/logo.svg" alt="Logo" />
-          </a>
+        <div class="header-main">
+          <nav class="site-nav">
+            <!-- Logo (Лого)-->
+            <a href="./index.html" class="header__logo">
+              <img src="./images/icons/logo.svg" alt="Logo" />
+            </a>
 
-          <ul class="site-nav__list">
-            <li class="site-nav__item site-nav__item-active">
-              <a href="./index.html" class="site-nav__link">Головна</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="" class="site-nav__link">Товари</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="" class="site-nav__link">Послуги</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="" class="site-nav__link">Регламент</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="" class="site-nav__link">Контакти</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="" class="site-nav__link">Блог</a>
-            </li>
-          </ul>
-        </nav>
+            <ul class="site-nav__list">
+              <li class="site-nav__item site-nav__item-active">
+                <a href="./index.html" class="site-nav__link">Головна</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link">Товари</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link">Послуги</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link">Регламент</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link">Контакти</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link">Блог</a>
+              </li>
+            </ul>
+          </nav>
 
-        <!-- Contacts (Контакти) -->
-        <div class="header-contact">
-          <ul class="header-contact__list">
-            <li class="header-contact__item">
-              <a href="tel:+380994401313" class="header-contact__link">
-                <svg class="header-contact__icon" width="16" height="16">
-                  <use href="./images/icons/header/header.svg#tel"></use>
-                </svg>
-                +38 (099) 440-13-13
-              </a>
-            </li>
-            <li class="header-contact__item">
-              <a href="tel:+380994401313" class="header-contact__link">
-                <svg class="header-contact__icon" width="16" height="16">
-                  <use href="./images/icons/header/header.svg#tel"></use>
-                </svg>
-                +38 (099) 440-13-13
-              </a>
-            </li>
-          </ul>
+          <!-- Contacts (Контакти) -->
+          <div class="header-contact">
+            <ul class="header-contact__list">
+              <li class="header-contact__item">
+                <a href="tel:+380994401313" class="header-contact__link">
+                  <svg class="header-contact__icon" width="16" height="16">
+                    <use href="./images/icons/header/header.svg#tel"></use>
+                  </svg>
+                  +38 (099) 440-13-13
+                </a>
+              </li>
+              <li class="header-contact__item">
+                <a href="tel:+380994401313" class="header-contact__link">
+                  <svg class="header-contact__icon" width="16" height="16">
+                    <use href="./images/icons/header/header.svg#tel"></use>
+                  </svg>
+                  +38 (099) 440-13-13
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Consultation (Консультація) -->
+          <div class="header-consultation">
+            <button class="header-consultation__button">
+              <svg class="header-consultation__icon" width="16" height="16">
+                <use href="./images/icons/header/header.svg#tel"></use>
+              </svg>
+              передзвоніть мені
+            </button>
+          </div>
+
+          <!-- Socials  (Соц мережі) -->
+          <div class="header-socials">
+            <ul class="header-socials__list">
+              <li class="header-socials__item">
+                <a
+                  href="https://www.instagram.com/autoplatform.service"
+                  target="_blank"
+                  class="header-socials__link"
+                >
+                  <svg class="header-socials__icon">
+                    <use
+                      href="./images/icons/header/header.svg#instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-socials__item">
+                <a href="#" target="_blank" class="header-socials__link">
+                  <svg class="header-socials__icon">
+                    <use href="./images/icons/header/header.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-socials__item">
+                <a
+                  href="https://www.facebook.com/autoplatform.service"
+                  target="_blank"
+                  class="header-socials__link"
+                >
+                  <svg class="header-socials__icon">
+                    <use href="./images/icons/header/header.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-socials__item">
+                <a
+                  href="https://www.youtube.com/channel/UCnWirVZuCBP8U4UENYSgtbw"
+                  target="_blank"
+                  class="header-socials__link"
+                >
+                  <svg class="header-socials__icon">
+                    <use href="./images/icons/header/header.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <!-- Consultation (Консультація) -->
-        <div class="header-consultation">
-          <button class="header-consultation__button">передзвоніть мені</button>
-        </div>
-
-        <!-- Socials  (Соц мережі) -->
-        <div class="header-socials">
-          <ul class="header-socials__list">
-            <li class="header-socials__item">
-              <a
-                href="https://www.instagram.com/autoplatform.service"
-                target="_blank"
-                class="header-socials__link"
-              >
-                <svg class="header-socials__icon">
-                  <use href="./images/icons/social/social.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="header-socials__item">
-              <a href="#" target="_blank" class="header-socials__link">
-                <svg class="header-socials__icon">
-                  <use href="./images/icons/header/header.svg#telegram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="header-socials__item">
-              <a
-                href="https://www.facebook.com/autoplatform.service"
-                target="_blank"
-                class="header-socials__link"
-              >
-                <svg class="header-socials__icon">
-                  <use href="./images/icons/header/header.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="header-socials__item">
-              <a
-                href="https://www.youtube.com/channel/UCnWirVZuCBP8U4UENYSgtbw"
-                target="_blank"
-                class="header-socials__link"
-              >
-                <svg class="header-socials__icon">
-                  <use href="./images/icons/header/header.svg#youtube"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
         <!-- Tablet  -->
         <div class="tablet__main">
           <a href="./index.html" class="tablet__logo">

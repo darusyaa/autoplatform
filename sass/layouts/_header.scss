@@ -21,20 +21,7 @@
     );
   }
 }
-
-.site-nav {
-  display: none;
-}
-
-.header-contact {
-  display: none;
-}
-
-.header-consultation {
-  display: none;
-}
-
-.header-socials {
+.header-main {
   display: none;
 }
 
@@ -52,17 +39,10 @@
 
 .mobile {
   &__main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 16px;
+    @include headerMain();
   }
   &__btn {
-    background: transparent;
-    border: none;
-    padding: 0;
+    @include headerButton();
   }
 }
 
@@ -81,18 +61,10 @@
 
   .tablet {
     &__main {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      padding-bottom: 16px;
+      @include headerMain();
     }
     &__btn {
-      display: flex;
-      background: transparent;
-      border: none;
-      padding: 0;
+      @include headerButton();
     }
   }
 
@@ -142,19 +114,69 @@
     display: none;
   }
 
+  .header-main {
+    @include headerMain();
+  }
+
   .site-nav {
     display: flex;
+    align-items: center;
+
+    &__list {
+      margin-left: 10px;
+      display: flex;
+      gap: 24px;
+    }
+
+    &__link {
+      @include fontPreset(700, 14px, 24px, 0);
+      color: $white-color;
+      text-transform: capitalize;
+    }
   }
 
   .header-contact {
-    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__link {
+      @include fontPreset(700, 14px, 14px, 0);
+      color: $white-color;
+    }
+
+    &__icon {
+      margin-right: 8px;
+      fill: $white-color;
+    }
   }
 
   .header-consultation {
-    display: flex;
+    &__button {
+      @include buttonSet(flex, 202px, 40px, 12px, 16px, $accent-color, black);
+      @include fontPreset(700, 14px, 14px, 0);
+      box-shadow: 4px 4px 0px #3da9f4;
+    }
+
+    &__icon {
+      margin-right: 8px;
+    }
   }
 
   .header-socials {
-    display: flex;
+    &__list {
+      display: flex;
+      gap: 16px;
+    }
+
+    &__icon {
+      fill: $white-color;
+      width: 16px;
+      height: 16px;
+    }
   }
 }

@@ -10,5 +10,5 @@ $footer-color: #19191a;
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 @function lineHeight($font-size, $line-height) {
-  @return ($line-height / $font-size);
+  @return calc($line-height / $font-size);
 }
