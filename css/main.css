@@ -289,7 +289,6 @@ a {
   visibility: hidden;
   z-index: 100;
   pointer-events: none;
-  overflow-y: scroll;
 }
 .mobile-menu.is-open {
   opacity: 1;
