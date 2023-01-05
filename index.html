@@ -173,8 +173,9 @@
 
           <button
             type="button"
-            class="tablet__btn tablet__btn--open"
+            class="tablet__btn tablet__btn--open js-open-menu-tab"
             aria-expanded="false"
+            aria-controls="tablet-menu-container"
           >
             <svg
               class="tablet__icon"
@@ -190,12 +191,13 @@
           </button>
         </div>
 
-        <div class="tablet-menu">
-          <div class="tablet__container">
+        <div class="tablet-menu js-menu-container-tab">
+          <div class="tablet__container" id="tablet-menu-container">
             <button
               type="button"
-              class="tablet__btn tablet__btn--close"
+              class="tablet__btn tablet__btn--close is-close js-close-menu-tab"
               aria-expanded="false"
+              aria-controls="tablet-menu-container"
             >
               <svg
                 class="tablet__icon"
