@@ -87,7 +87,7 @@
     margin-bottom: 20px;
 
     &__button {
-      @include buttonSet(flex, 312px, 40px, 12px, 16px, $accent-color, black);
+      @include buttonSet(flex, 300px, 40px, 12px, 16px, $accent-color, black);
       @include fontPreset(700, 14px, 14px, 0);
       box-shadow: 4px 4px 0px #3da9f4;
       justify-content: center;
@@ -109,6 +109,11 @@
       fill: $white-color;
       width: 24px;
       height: 24px;
+
+      &-tg {
+        width: 21.5px;
+        height: 21.5px;
+      }
     }
   }
 }
