@@ -1,0 +1,50 @@
+.integrations {
+  padding: 48px 24px;
+  background-color: $white-color;
+  text-align: center;
+
+  &__text {
+    @include fontPreset(600, 14px, 16px, 0.7px);
+  }
+
+  &__title {
+    @include fontPreset(400, 24px, 32px, 0);
+    color: $main-title-color;
+
+    &-span {
+      font-weight: 700;
+    }
+  }
+
+  &__button {
+    @include buttonSet(flex, 187px, 46px, 12px, 16px, $accent-color, black);
+    @include fontPreset(700, 14px, 14px, 0.7px);
+    box-shadow: 4px 4px 0px #3da9f4;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    // * чтобы не сливалось
+    margin-top: 10px;
+  }
+}
+
+@media screen and(min-width:768px) {
+  .integrations {
+    padding: 64px 130px;
+
+    &__text {
+      @include fontPreset(600, 16px, 16px, 0.7px);
+    }
+
+    &__title {
+      @include fontPreset(400, 36px, 48px, 0);
+    }
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .integrations {
+    padding: 64px 100px;
+  }
+}
