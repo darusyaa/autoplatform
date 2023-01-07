@@ -159,7 +159,7 @@
   .header-consultation {
     &__button {
       @include buttonSet(flex, 202px, 40px, 12px, 16px, $accent-color, black);
-      @include fontPreset(700, 14px, 14px, 0);
+      @include fontPreset();
       box-shadow: 4px 4px 0px #3da9f4;
     }
 
