@@ -1182,16 +1182,16 @@ a {
     position: absolute;
     width: 123px;
     height: 494px;
-    left: 28%;
-    top: 8%;
+    left: calc(50% + 61px - 242.34px);
+    top: calc(50% - 27px - 124px);
     transform: rotate(25deg);
   }
   .work__icon-arr2 {
     position: absolute;
     width: 123px;
     height: 494px;
-    left: 447px;
-    top: 50px;
+    left: calc(50% + 305px - 242.34px);
+    top: calc(50% + 54px - 124px);
     transform: rotate(25deg);
   }
 }
@@ -1205,16 +1205,10 @@ a {
     top: calc(50% + 125px - 124px);
   }
   .work__item-2 {
-    position: absolute;
-    width: 273.19px;
-    height: 250px;
     left: calc(50% - 136.595px - 0.98px);
     top: calc(50% + 90px - 4px);
   }
   .work__item-3 {
-    position: absolute;
-    width: 273.19px;
-    height: 226px;
     left: calc(50% - 45px + 239.4px);
     top: calc(50% + 55px + 116.5px);
   }
@@ -1234,15 +1228,15 @@ a {
     letter-spacing: 0;
   }
   .work__icon-arr1 {
-    width: 200px;
-    left: 28%;
-    top: 8%;
-    transform: rotate(15deg);
+    width: 220px;
+    left: calc(50% - 47px - 242.34px);
+    top: calc(50% - 27px - 124px);
+    transform: rotate(10deg);
   }
   .work__icon-arr2 {
     width: 200px;
-    left: 447px;
-    top: 50px;
-    transform: rotate(15deg);
+    left: calc(50% + 309px - 242.34px);
+    top: calc(50% + 63px - 124px);
+    transform: rotate(10deg);
   }
 }/*# sourceMappingURL=main.css.map */
