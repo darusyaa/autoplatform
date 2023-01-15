@@ -1,0 +1,226 @@
+.work {
+  padding: 48px 40px;
+  background-color: $white-color;
+  text-align: center;
+
+  &__text {
+    @include fontPreset(400, 16px, 16px, 0);
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    @include fontPreset(400, 24px, 32px, 0);
+    color: $main-title-color;
+    margin-bottom: 32px;
+
+    &-span {
+      font-weight: 700;
+    }
+  }
+
+  &__wrapper {
+  }
+
+  &__list {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__item {
+    &-arr {
+      display: none;
+    }
+
+    &-ic {
+      background-color: $second-accent-color;
+      border-radius: 50px;
+      width: 98px;
+      height: 97px;
+
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 24px;
+
+      position: relative;
+    }
+
+    &-title {
+      @include fontPreset(700, 16px, 24px, 0);
+      color: #1d293f;
+      margin-bottom: 8px;
+    }
+
+    &-description {
+      @include fontPreset(600, 12px, 16px, 0);
+      text-transform: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__icon {
+    width: 98px;
+    height: 98px;
+
+    position: absolute;
+    left: -1px;
+  }
+}
+
+@media screen and(min-width:768px) {
+  .work {
+    padding: 48px 24px;
+    // position: relative;
+    min-height: 600px;
+
+    &__text {
+      @include fontPreset(600, 16px, 16px, 0);
+      margin-bottom: 16px;
+    }
+
+    &__title {
+      @include fontPreset(400, 36px, 48px, 0);
+      margin-bottom: 40px;
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__list {
+      display: block;
+      margin: 0;
+    }
+
+    &__item {
+      &-1 {
+        position: absolute;
+        width: 267.32px;
+        height: 250px;
+        left: calc(50% - 267.32px / 2 - 242.34px);
+        top: calc(50% + 250px / 2 - 124px);
+      }
+
+      &-2 {
+        position: absolute;
+        width: 273.19px;
+        height: 250px;
+        left: calc(50% - 273.19px / 2 - 0.98px);
+        top: calc(50% + 180px / 2 - 4px);
+      }
+
+      &-3 {
+        position: absolute;
+        width: 273.19px;
+        height: 226px;
+        left: calc(50% - 273.19px / 2 + 239.4px);
+        top: calc(50% + 110px / 2 + 116.5px);
+      }
+
+      &-arr {
+        display: block;
+
+        &1 {
+            // position: relative;
+        }
+      }
+
+      &-title {
+        @include fontPreset(700, 24px, 34px, 0);
+      }
+
+      &-description {
+        @include fontPreset(600, 14px, 21px, 0);
+      }
+    }
+
+    &__icon {
+
+      &-arr1 {
+        position: absolute;
+        width: 123px;
+        height: 494px;
+        left: 28%;
+        top: 8%;
+        transform: rotate(25deg);
+      }
+
+      &-arr2 {
+        position: absolute;
+        width: 123px;
+        height: 494px;
+        left: 447px;
+        top: 50px;
+        transform: rotate(25deg);
+      }
+    }
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .work {
+    padding: 88px 24px;
+    // position: relative;
+    min-height: 650px;
+
+    &__item {
+      &-1 {
+        left: calc(50% - 500px / 2 - 242.34px);
+        top: calc(50% + 250px / 2 - 124px);
+      }
+
+      &-2 {
+        position: absolute;
+        width: 273.19px;
+        height: 250px;
+        left: calc(50% - 273.19px / 2 - 0.98px);
+        top: calc(50% + 180px / 2 - 4px);
+      }
+
+      &-3 {
+        position: absolute;
+        width: 273.19px;
+        height: 226px;
+        left: calc(50% - 90px / 2 + 239.4px);
+        top: calc(50% + 110px / 2 + 116.5px);
+      }
+
+      &-arr {
+        display: block;
+
+        &1 {
+            // position: relative;
+        }
+      }
+
+      &-title {
+        @include fontPreset(700, 24px, 34px, 0);
+      }
+
+      &-description {
+        @include fontPreset(600, 14px, 21px, 0);
+      }
+    }
+
+    &__icon {
+
+      &-arr1 {
+        width: 200px;
+        left: 28%;
+        top: 8%;
+        transform: rotate(15deg);
+      }
+
+      &-arr2 {
+        width: 200px;
+        left: 447px;
+        top: 50px;
+        transform: rotate(15deg);
+      }
+    }
+  }
+}
