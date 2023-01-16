@@ -1485,4 +1485,131 @@ a {
     cursor: pointer;
     margin-top: 0;
   }
+}
+.feedbacks {
+  padding: 48px 24px;
+  background-color: #f6f6f7;
+  text-align: center;
+}
+.feedbacks__text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+}
+.feedbacks__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.3333333333;
+  letter-spacing: 0;
+  color: #1b242b;
+  margin-bottom: 24px;
+}
+.feedbacks__title-span {
+  font-weight: 700;
+}
+.feedbacks__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.feedbacks__card {
+  width: 312px;
+  height: 439px;
+  background-color: #ffffff;
+}
+.feedbacks__card-img {
+  width: 312px;
+  height: 217px;
+}
+.feedbacks__card-thumb {
+  padding: 32px 24px;
+  display: flex;
+}
+.feedbacks__card-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333333333;
+  letter-spacing: 0;
+  text-transform: none;
+  text-align: left;
+  display: flex;
+  margin-bottom: 16px;
+}
+.feedbacks__card-client {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.6428571429;
+  letter-spacing: 0;
+  color: #1b242b;
+  text-transform: none;
+  margin-bottom: 5px;
+  text-align: left;
+}
+.feedbacks__card-date {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.7692307692;
+  letter-spacing: 0;
+  font-style: italic;
+  text-transform: none;
+  text-align: left;
+}
+.feedbacks__icon {
+  height: 25px;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .feedbacks__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.6px;
+    margin-bottom: 18px;
+  }
+  .feedbacks__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.3333333333;
+    letter-spacing: 0;
+    margin-bottom: 48px;
+  }
+  .feedbacks__list {
+    flex-direction: row;
+  }
+  .feedbacks__card {
+    width: 230px;
+    height: 530px;
+  }
+  .feedbacks__card-img {
+    width: 230px;
+    height: 292px;
+  }
+  .feedbacks__card-thumb {
+    padding: 24px 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feedbacks {
+    padding: 88px 88px;
+  }
+  .feedbacks__list {
+    flex-direction: row;
+    gap: 48px;
+  }
+  .feedbacks__card {
+    width: 350px;
+    height: 510px;
+  }
+  .feedbacks__card-img {
+    width: 350px;
+    height: 292px;
+  }
+  .feedbacks__card-thumb {
+    padding: 27px 24px;
+  }
 }/*# sourceMappingURL=main.css.map */
