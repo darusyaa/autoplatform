@@ -1,0 +1,324 @@
+.contacts {
+  padding: 48px 24px;
+  background-color: $main-title-color;
+
+  &-schedule {
+    &__title {
+      @include fontPreset(400, 24px, 32px, 0);
+      color: $white-color;
+      margin-bottom: 16px;
+
+      &-span {
+        font-weight: 700;
+      }
+    }
+    &__text {
+      @include fontPreset(600, 14px, 21px, 0);
+      margin-bottom: 24px;
+      color: #8d98a1;
+      text-align: left;
+      text-transform: none;
+
+      font-family: 'Open Sans';
+    }
+
+    &__box {
+      display: flex;
+
+      color: $white-color;
+      @include fontPreset(800, 14px, 20px, 0.03em);
+
+      gap: 16px;
+
+      padding-bottom: 16px;
+      border-bottom: 2px solid #fbed1f;
+      box-shadow: 0px 2px 0px 0px #3da9f4;
+
+      margin-bottom: 48px;
+    }
+
+    &__icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__column-d {
+      font-weight: 400;
+    }
+
+    &__weekend {
+      max-width: 100px;
+    }
+  }
+
+  &-contact {
+    &__title {
+      @include fontPreset(400, 24px, 32px, 0);
+      color: $white-color;
+      margin-bottom: 16px;
+
+      &-span {
+        font-weight: 700;
+      }
+    }
+    &__text {
+      @include fontPreset(600, 14px, 21px, 0);
+      margin-bottom: 24px;
+      color: #8d98a1;
+      text-align: left;
+      text-transform: none;
+
+      font-family: 'Open Sans';
+    }
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+
+      color: $white-color;
+      @include fontPreset(800, 16px, 24px, 0);
+
+      gap: 16px;
+
+      padding-bottom: 16px;
+      border-bottom: 2px solid #fbed1f;
+      box-shadow: 0px 2px 0px 0px #3da9f4;
+
+      margin-bottom: 48px;
+    }
+
+    &__row {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+
+    &__icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__link {
+      color: inherit;
+      text-transform: none;
+    }
+  }
+
+  &-address {
+    &__title {
+      @include fontPreset(400, 24px, 32px, 0);
+      color: $white-color;
+
+      &-span {
+        font-weight: 700;
+      }
+    }
+
+    &__link {
+      color: $white-color;
+      text-transform: none;
+      @include fontPreset(400, 14px, 24px, 0);
+      opacity: 0.8;
+    }
+  }
+
+  &__right {
+    &-title {
+      @include fontPreset(400, 24px, 32px, 0);
+      color: $white-color;
+      margin-bottom: 16px;
+
+      &-span {
+        font-weight: 700;
+      }
+    }
+
+    &-text {
+      @include fontPreset(600, 14px, 21px, 0);
+      margin-bottom: 24px;
+      color: #8d98a1;
+      text-align: left;
+      text-transform: none;
+
+      font-family: 'Open Sans';
+    }
+  }
+
+  &-form {
+    padding: 24px 16px;
+    background-color: #fff;
+    border-radius: 3px;
+
+    &__field {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px;
+    }
+
+    &__label {
+      @include fontPreset(800, 14px, 18px, 0);
+      color: #1d293f;
+      margin-bottom: 7px;
+
+      & span {
+        color: red;
+      }
+    }
+
+    &__input {
+      @include fontPreset(500, 16px, 24px, 0);
+      color: $main-title-color;
+      padding: 8px 14px;
+      border: 2px solid #f6f6f7;
+    }
+
+    &__comment {
+      @include fontPreset(500, 16px, 24px, 0);
+      color: $main-title-color;
+      padding: 8px 14px;
+      border: 2px solid #f6f6f7;
+      height: 170px;
+    }
+
+    &__button {
+      @include buttonSet(flex, 280px, 46px, 12px, 16px, $accent-color, black);
+      @include fontPreset(700, 14px, 14px, 0.7px);
+      box-shadow: 4px 4px 0px #3da9f4;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+    }
+  }
+}
+
+.mapouter-mob {
+  margin-top: 23px;
+  margin-bottom: 48px;
+  width: 312px;
+  height: 190px;
+}
+
+.mapouter-tb {
+  display: none;
+}
+
+.mapouter-desk {
+  display: none;
+}
+
+@media screen and(min-width:768px) {
+  .contacts {
+    &-schedule {
+      &__title {
+        @include fontPreset(400, 36px, 48px, 0);
+      }
+    }
+
+    &-contact {
+      &__title {
+        @include fontPreset(400, 36px, 48px, 0);
+      }
+    }
+
+    &-address {
+      &__title {
+        @include fontPreset(400, 36px, 48px, 0);
+      }
+    }
+
+    &__right {
+      &-title {
+        @include fontPreset(400, 36px, 48px, 0);
+      }
+    }
+
+    &-form {
+        padding: 32px 32px;
+      &__btn {
+        display: flex;
+        justify-content: flex-end;
+      }
+      &__button {
+        @include buttonSet(flex, 150px, 46px, 12px, 16px, $accent-color, black);
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+  .mapouter-mob {
+    display: none;
+  }
+  .mapouter-desk {
+    display: none;
+  }
+  .mapouter-tb {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    width: 720px;
+    height: 190px;
+
+    display: block;
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .contacts {
+    padding: 88px 88px;
+
+    &__container {
+        display: flex;
+        gap: 50px;
+        flex-grow: 1;
+    }
+    &-schedule {
+      &__title {
+        @include fontPreset(400, 36px, 48px, 0);
+      }
+    }
+
+    &-contact {
+      &__title {
+        @include fontPreset(400, 36px, 48px, 0);
+      }
+    }
+
+    &-address {
+      &__title {
+        @include fontPreset(400, 36px, 48px, 0);
+      }
+    }
+
+    &__right {
+      &-title {
+        @include fontPreset(400, 36px, 48px, 0);
+      }
+    }
+
+    &-form {
+        padding: 32px 32px;
+        min-height: 629px;
+      &__btn {
+        display: flex;
+        justify-content: flex-end;
+      }
+      &__button {
+        @include buttonSet(flex, 150px, 46px, 12px, 16px, $accent-color, black);
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+  .mapouter-mob {
+    display: none;
+  }
+  .mapouter-tb {
+    display: none;
+  }
+  .mapouter-desk {
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+    display: block;
+  }
+}
