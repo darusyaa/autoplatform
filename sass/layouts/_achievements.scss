@@ -1,0 +1,141 @@
+.achievements {
+  padding: 48px 24px;
+  background-color: $main-title-color;
+  text-align: center;
+
+  &__text {
+    @include fontPreset(600, 16px, 16px, 0);
+    margin-bottom: 8px;
+    color: #757981;
+  }
+
+  &__title {
+    @include fontPreset(400, 24px, 32px, 0);
+    color: $white-color;
+    margin-bottom: 24px;
+
+    &-span {
+      font-weight: 700;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  &__item {
+    &-number {
+      @include fontPreset(800, 32px, 48px, 0);
+      color: $accent-color;
+      text-shadow: 2px 2px 0px $second-accent-color;
+
+      text-align: left;
+    }
+
+    &-description {
+      @include fontPreset(400, 14px, 20px, 0);
+      color: $white-color;
+      text-align: left;
+
+      & span {
+        font-weight: 700;
+      }
+
+      &-desk {
+        display: none;
+      }
+
+      &-mb {
+        max-width: 88px;
+      }
+    }
+  }
+
+  &__box {
+    width: 88px;
+    height: 65px;
+    border-bottom: 1px solid #757981;
+
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and(min-width:768px) {
+  .achievements {
+    padding: 48px 24px;
+
+    &__text {
+      @include fontPreset(600, 16px, 16px, 0.6px);
+      margin-bottom: 16px;
+    }
+
+    &__title {
+      @include fontPreset(400, 36px, 48px, 0);
+      color: $white-color;
+      margin-bottom: 47px;
+    }
+
+    &__item {
+      &-number {
+        @include fontPreset(800, 80px, 80px, 0);
+        text-shadow: 4px 4px 0px $second-accent-color;
+      }
+
+      &-description {
+        @include fontPreset(400, 24px, 28px, 0);
+
+        &-desk {
+          display: block;
+          max-width: 234px;
+        }
+
+        &-mb {
+          display: none;
+        }
+      }
+    }
+
+    &__box {
+      width: 225px;
+      height: 97px;
+    }
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .achievements {
+    padding: 88px 88px;
+
+    &__title {
+      margin-bottom: 59px;
+    }
+
+    &__list {
+      gap: 70px;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+
+      &-number {
+        margin-right: 24px;
+      }
+
+    }
+
+    &__box {
+      width: auto;
+      max-width: 235px;
+      height: 86px;
+      border-bottom: 0;
+      border-right: 1px solid #757981;
+
+      margin-right: 24px;
+      padding-left: 24px;
+    }
+  }
+}
