@@ -193,10 +193,8 @@
 }
 
 .mapouter-mob {
-  margin-top: 23px;
-  margin-bottom: 48px;
-  width: 312px;
-  height: 190px;
+  //   display: block;
+  display: none;
 }
 
 .mapouter-tb {
@@ -234,7 +232,7 @@
     }
 
     &-form {
-        padding: 32px 32px;
+      padding: 32px 32px;
       &__btn {
         display: flex;
         justify-content: flex-end;
@@ -258,7 +256,8 @@
     width: 720px;
     height: 190px;
 
-    display: block;
+    // display: block;
+    display: none;
   }
 }
 
@@ -267,9 +266,9 @@
     padding: 88px 88px;
 
     &__container {
-        display: flex;
-        gap: 50px;
-        flex-grow: 1;
+      display: flex;
+      gap: 50px;
+      flex-grow: 1;
     }
     &-schedule {
       &__title {
@@ -296,8 +295,8 @@
     }
 
     &-form {
-        padding: 32px 32px;
-        min-height: 629px;
+      padding: 32px 32px;
+      min-height: 629px;
       &__btn {
         display: flex;
         justify-content: flex-end;
@@ -319,6 +318,7 @@
     margin-top: 30px;
     margin-bottom: 60px;
 
-    display: block;
+    // display: block;
+    display: none;
   }
 }

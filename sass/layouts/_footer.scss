@@ -1,0 +1,94 @@
+.footer {
+  background-color: $main-title-color;
+
+  &__container {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    @include container(
+      $padd-top: 16px,
+      $padd-btm: 24px,
+      $padd-right: 24px,
+      $padd-left: 24px
+    );
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    @include fontPreset(700, 14px, 24px, 0);
+    color: $white-color;
+    text-transform: none;
+  }
+
+  .footer-contact {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 42px;
+    }
+
+    &__link {
+      @include fontPreset(700, 14px, 14px, 0);
+      color: $white-color;
+      text-decoration: underline;
+    }
+
+    &__icon {
+      margin-right: 8px;
+      fill: $white-color;
+    }
+  }
+
+  .footer-consultation {
+    display: flex;
+    justify-content: center;
+    &__button {
+      @include buttonSet(flex, 300px, 40px, 12px, 16px, $accent-color, black);
+      @include fontPreset();
+      box-shadow: 4px 4px 0px #3da9f4;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
+    }
+
+    &__icon {
+      margin-right: 8px;
+    }
+  }
+
+  .footer-socials {
+    &__list {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    &__icon {
+      fill: $white-color;
+      width: 24px;
+      height: 24px;
+
+      &-tg {
+        width: 20.5px;
+        height: 20.5px;
+      }
+    }
+  }
+}
+
+@
