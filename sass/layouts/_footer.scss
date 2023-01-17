@@ -32,7 +32,11 @@
     text-transform: none;
   }
 
-  .footer-contact {
+  &-contact {
+    // &__tb {
+    //   display: none;
+    // }
+
     &__list {
       display: flex;
       flex-direction: column;
@@ -53,7 +57,7 @@
     }
   }
 
-  .footer-consultation {
+  &-consultation {
     display: flex;
     justify-content: center;
     &__button {
@@ -71,7 +75,7 @@
     }
   }
 
-  .footer-socials {
+  &-socials {
     &__list {
       display: flex;
       gap: 16px;
@@ -91,4 +95,193 @@
   }
 }
 
-@
+@media screen and(min-width:768px) {
+  .footer {
+    &__container {
+      @include container(
+        $padd-top: 40px,
+        $padd-btm: 24px,
+        $padd-right: 24px,
+        $padd-left: 24px
+      );
+    }
+
+    &-top {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 16px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__logo {
+      margin-bottom: 0;
+      justify-content: left;
+    }
+
+    &__list {
+      flex-direction: row;
+      margin-bottom: 0;
+      gap: 40px;
+    }
+
+    &-bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-contact {
+      // &__mob {
+      //     display: none;
+      // }
+      // &__tb {
+      //   display: block;
+      // }
+
+      &__list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+      }
+
+      &__link {
+      }
+
+      &__icon {
+      }
+    }
+
+    &-consultation {
+      &__button {
+        margin: 0;
+        min-width: 200px;
+      }
+
+      &__icon {
+      }
+    }
+
+    .footer-socials {
+      &__list {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+      }
+
+      &__icon {
+        fill: $white-color;
+        width: 24px;
+        height: 24px;
+
+        &-tg {
+          width: 20.5px;
+          height: 20.5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .footer {
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 0 15px;
+      padding-top: 18px;
+      padding-right: 24px;
+      padding-left: 24px;
+      padding-bottom: 24px;
+    }
+
+    &-top {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 0;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__logo {
+      margin-bottom: 0;
+      justify-content: left;
+    }
+
+    &__list {
+      flex-direction: row;
+      margin-bottom: 0;
+      gap: 24px;
+      margin-left: 10px;
+    }
+
+    &__link {
+      @include fontPreset(700, 14px, 24px, 0.03em);
+    }
+
+    &-bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-contact {
+      margin-left: 10px;
+      margin-right: 20px;
+      // &__mob {
+      //     display: none;
+      // }
+      // &__tb {
+      //   display: block;
+      // }
+
+      &__list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+      }
+
+      &__link {
+        @include fontPreset(700, 14px, 14px, 0);
+      }
+
+      &__icon {
+      }
+    }
+
+    &-consultation {
+        margin-right: 20px;
+      &__button {
+        margin: 0;
+        min-width: 200px;
+      }
+
+      &__icon {
+      }
+    }
+
+    .footer-socials {
+      &__list {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+      }
+
+      &__icon {
+        fill: $white-color;
+        width: 16px;
+        height: 16px;
+
+        &-tg {
+          width: 14.5px;
+          height: 14.5px;
+        }
+      }
+    }
+  }
+}
